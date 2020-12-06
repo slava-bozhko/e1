@@ -148,6 +148,11 @@ header{
 .header-r{
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
+    @include media(576px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 .mod-color{
     color: $primery-color;
@@ -262,6 +267,9 @@ header{
     margin-right: 50px;
     @include media(992px) {
         margin-right: 25px;        
+    }
+    @include media(576px) {
+        margin: 10px auto;        
     }
 }
 .article{
