@@ -342,3 +342,29 @@ header{
         color: $secondary-color;
     }
 }
+
+.find-text{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $primery-color;
+    &:active{
+        outline: none;
+    }
+}
+
+#find-name{
+    display: none;
+}
+
+#find-name ~ #find-text{
+    transition: all .3s ease-in-out;
+    width: 150px;
+}
+
+#find-name:checked ~ #find-text{
+    transform: scale(0);
+    width: 50px;
+    transition: all .3s ease-in-out;
+    
+}
