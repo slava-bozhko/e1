@@ -96,7 +96,7 @@ header{
     }
 }
 .search{
-    padding: 20px;
+    margin: 5px;
 }
 .btns{
     background-color: $primery-color;
@@ -139,9 +139,15 @@ header{
         margin: 0;
 
     }
+    &--search{
+        border: none;
+        outline: none;
+        margin: 0 5px 0 5px;
+    }
 }
 .header-r{
     display: flex;
+    justify-content: left;
 }
 .mod-color{
     color: $primery-color;
@@ -367,4 +373,8 @@ header{
     width: 50px;
     transition: all .3s ease-in-out;
     
+}
+#find-name:checked ~ #btns-search{
+    transform: scale(0);
+    transition: all .3s ease-in-out;
 }
