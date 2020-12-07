@@ -350,6 +350,11 @@ header{
     flex-wrap: wrap;
     &__item{
         margin: 20px;
+        border-bottom: 1px solid transparent;
+        @include hover{
+            border-bottom: 1px solid $secondary-color;
+            transition: all .5s ease-in-out;
+        }
     }
     &__item a{
         text-decoration: none;
